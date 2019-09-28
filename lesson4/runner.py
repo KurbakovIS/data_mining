@@ -18,5 +18,5 @@ if __name__ == '__main__':
     crawler_settings = Settings()
     crawler_settings.setmodule(settings)
     process = CrawlerProcess(settings=crawler_settings)
-    process.crawl(InstagramSpider, ['mizgireva_', 'harley_davidson_msk'], INST_LOGIN, INST_PWD)
+    process.crawl(InstagramSpider, ['mizgireva_', 'geekbrains.ru'], INST_LOGIN, INST_PWD)
     process.start()
