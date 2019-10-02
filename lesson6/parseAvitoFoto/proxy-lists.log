@@ -1,0 +1,13 @@
+Getting proxies...
+Error: Missing required option (`sourceOptions.bitproxies.apiKey`): You can get an API key for this service by creating an account at https://bitproxies.eu/
+Writing output to C:\Users\Posi_\Desktop\data_mining\lesson6\parseAvitoFoto\proxies.txt
+Finished scraping from rosinstrument
+Finished scraping from gatherproxy
+Finished scraping from proxylists-net
+Error while scraping spys-one: Error: HTTP 503 (http://spys.one/en/non-anonymous-proxy-list/): Service Temporarily Unavailable
+Error while scraping coolproxy: TimeoutError: waiting for selector "#main table tbody tr:not(:first-child)" failed: timeout 2000ms exceeded
+Error while scraping spys-one: TimeoutError: waiting for selector "table table tbody tr:nth-child(n+4)" failed: timeout 5000ms exceeded
+Error while scraping xroxy: TimeoutError: waiting for selector "#DataTables_Table_0 > tbody > tr" failed: timeout 5000ms exceeded
+Error while scraping hugeproxies: TimeoutError: waiting for selector "#content .post-content table tbody tr" failed: timeout 5000ms exceeded
+Finished scraping from proxynova
+Error while scraping hidemyname: TimeoutError: waiting for selector ".proxy__t tbody tr" failed: timeout 10000ms exceeded
