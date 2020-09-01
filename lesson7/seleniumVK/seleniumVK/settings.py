@@ -14,9 +14,10 @@ BOT_NAME = 'seleniumVK'
 SPIDER_MODULES = ['seleniumVK.spiders']
 NEWSPIDER_MODULE = 'seleniumVK.spiders'
 
-
+LOG_ENABLED = True
+LOG_LEVEL = 'DEBUG'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'seleniumVK (+http://www.yourdomain.com)'
+USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -33,7 +34,7 @@ ROBOTSTXT_OBEY = True
 #CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED = False
+COOKIES_ENABLED = True
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
@@ -64,10 +65,11 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'seleniumVK.pipelines.SeleniumvkPipeline': 300,
-#}
-
+ITEM_PIPELINES = {
+   'seleniumVK.pipelines.ParseavitofotoPipeline': 100,
+   'seleniumVK.pipelines.SeleniumvkPipeline': 300,
+}
+IMAGES_STORE = './images'
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True
